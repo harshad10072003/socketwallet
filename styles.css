@@ -1,0 +1,100 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    animation: rainbowBackground 15s ease infinite;
+}
+
+.container {
+    text-align: center;
+}
+
+.center {
+    position: relative;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 16px;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.loading-screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.loading-content {
+    color: white;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes rainbowBackground {
+    0% { background-color: #ff0000; } /* Red */
+    14.28% { background-color: #ff7f00; } /* Orange */
+    28.57% { background-color: #ffff00; } /* Yellow */
+    42.85% { background-color: #00ff00; } /* Green */
+    57.14% { background-color: #0000ff; } /* Blue */
+    71.42% { background-color: #4b0082; } /* Indigo */
+    85.71% { background-color: #9400d3; } /* Violet */
+    100% { background-color: #ff0000; } /* Back to Red */
+}
+
+.container {
+    text-align: center;
+}
+
+.center {
+    position: relative;
+    margin-bottom: 20px; /* Add some space between image and button */
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 16px;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
